@@ -5,3 +5,62 @@ body {
 .navbar-static-top {
   margin-bottom: 19px;
 }
+
+h1.title {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: 1px solid gray;
+}
+
+.center {
+    text-align: center;
+}
+
+#projects .img-box {
+    position: relative;
+}
+
+#projects .img-box .primary {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+        transition: opacity 0.1s linear;
+
+}
+
+#projects .img-box .secondary {
+    background-color: rgba(0, 172, 230, 0.58);
+    z-index: 2;
+}
+
+
+
+#projects .img-box .primary:hover {
+    opacity: 0.1;
+    transition: opacity 0.2s linear;
+}
+
+/* unvisited link */
+#projects a:link {
+    color: #006F94;
+}
+
+/* visited link */
+#projects a:visited {
+    color: #006F94;
+}
+
+/* mouse over link */
+#projects a:hover {
+    color: #0084b0;    
+    text-decoration: none;
+}
+
+/* selected link */
+#projects a:active {
+    color: #0084b0;    
+    text-decoration: none;
+}

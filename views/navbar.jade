@@ -1,4 +1,6 @@
 // Static navbar
+-var menu = { 'Home': '/', 'Projects': '/projects', 'Contact': '/contact' };
+
 .navbar.navbar-default.navbar-static-top(role='navigation')
   .container
     .navbar-header
@@ -10,12 +12,14 @@
       a.navbar-brand(href='/') Crespum
     .navbar-collapse.collapse
       ul.nav.navbar-nav
-        li.active
-          a(href='#') Home
-        li
-          a(href='/projects') Projects
-        li
-          a(href='#contact') Contact
+        each val, key in menu
+          li
+            if nav_selected === key
+              li.active
+                a(href=val, title=key)= key
+            else
+              li
+                a(href=val, title=key)= key          
       ul.nav.navbar-nav.navbar-right
         li
           a(href='../navbar/') Default
