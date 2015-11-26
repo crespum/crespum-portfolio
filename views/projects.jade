@@ -17,3 +17,11 @@ block content
                 .img-box
                   img.img-responsive.secondary(src=media_path+val.img_logo)
                   img.img-responsive.primary(src=media_path+val.img_mini)
+    each val, key in projects
+      .col-md-4.col-full-width
+        a(href="projects/"+val.url).link-img
+          .img-text
+            img.img-responsive(src=media_path+val.img_mini)
+            .caption.center
+              h2=val.title
+              p=val.brief
