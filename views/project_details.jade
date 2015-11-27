@@ -1,0 +1,9 @@
+extends layout
+block vars
+  -var nav_selected = 'Projects'; //default
+
+block content
+  -var media_path = "images/projects/";
+  section#project_details
+    .container
+      h1.title= title

@@ -4,7 +4,6 @@ block vars
 
 block content
   -var media_path = "images/projects/";
-  -var projects = [{'title':'Maintool Strap', 'brief':'Embedded software engineer for a wereable', 'url':'maintoolstrap', 'img_mini':'maintool.jpg', 'img_logo':'logo_maintool.png'}, {'title':'FemtoXat', 'brief':'Development of an Electrical Power Subsystem', 'url':'femtoxat', 'img_mini':'femtoxat.jpg', 'img_logo':'logo_uvigo.png'}, {'title':'Humsat', 'brief':'Researcher', 'url':'humsat', 'img_mini':'humsat.jpg', 'img_logo':'logo_uvigo.png'}];
   section#projects
     .container
       h1.title Projects I've been working on
@@ -13,13 +12,13 @@ block content
           .col-md-4
             h3.center=val.title
             p=val.brief
-              a(href="projects/"+val.url)
+              a(href="projects/"+key)
                 .img-box
                   img.img-responsive.secondary(src=media_path+val.img_logo)
                   img.img-responsive.primary(src=media_path+val.img_mini)
     each val, key in projects
       .col-md-4.col-full-width
-        a(href="projects/"+val.url).link-img
+        a(href="projects/"+key).link-img
           .img-text
             img.img-responsive(src=media_path+val.img_mini)
             .caption.center
