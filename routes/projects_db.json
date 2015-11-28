@@ -2,20 +2,88 @@
   "maintoolstrap": {
     "title": "Maintool Strap",
     "brief": "Embedded software engineer for a wereable",
-    "img_mini": "maintool.jpg",
-    "img_logo": "logo_maintool.png"
+    "media": {
+      "img_mini": "maintool.jpg",
+      "img_logo": "logo_maintool.png",
+      "img_header": "",
+      "img_list": [
+        "",
+        ""
+      ],
+      "video": ""
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "",
+    "technologies": "",
+    "activity_period": {
+      "start_date": "",
+      "completition_date": "",
+      "active": true
+    },
+    "links": {
+      "company_web": "",
+      "project_web": ""
+    }
   },
   "femtoxat": {
     "title": "FemtoXat",
     "brief": "Development of an Electrical Power Subsystem",
-    "url": "femtoxat",
-    "img_mini": "femtoxat.jpg",
-    "img_logo": "logo_uvigo.png"
+    "media": {
+      "img_mini": "femtoxat.jpg",
+      "img_logo": "logo_uvigo.png",
+      "img_header": "",
+      "img_list": [
+        "",
+        ""
+      ],
+      "video": ""
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "",
+    "technologies": "",
+    "activity_period": {
+      "start_date": "",
+      "completition_date": "",
+      "active": true
+    },
+    "links": {
+      "company_web": "",
+      "project_web": ""
+    }
   },
   "humsat": {
     "title": "Humsat",
     "brief": "Researcher",
-    "img_mini": "humsat.jpg",
-    "img_logo": "logo_uvigo.png"
+    "media": {
+      "img_mini": "humsat.jpg",
+      "img_logo": "logo_uvigo.png",
+      "img_header": "",
+      "img_list": [
+        "",
+        ""
+      ],
+      "video": ""
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "",
+    "technologies": "",
+    "activity_period": {
+      "start_date": "",
+      "completition_date": "",
+      "active": true
+    },
+    "links": {
+      "company_web": "",
+      "project_web": ""
+    }
   }
 }

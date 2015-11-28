@@ -14,13 +14,13 @@ block content
             p=val.brief
               a(href="projects/"+key)
                 .img-box
-                  img.img-responsive.secondary(src=media_path+val.img_logo)
-                  img.img-responsive.primary(src=media_path+val.img_mini)
+                  img.img-responsive.secondary(src=media_path+val.media.img_logo)
+                  img.img-responsive.primary(src=media_path+val.media.img_mini)
     each val, key in projects
       .col-md-4.col-full-width
         a(href="projects/"+key).link-img
           .img-text
-            img.img-responsive(src=media_path+val.img_mini)
+            img.img-responsive(src=media_path+val.media.img_mini)
             .caption.center
               h2=val.title
               p=val.brief
