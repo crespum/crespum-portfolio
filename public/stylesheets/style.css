@@ -75,6 +75,7 @@ a:focus {
    padding: 0 !important;
    margin: 0 !important;
 }
+
 /*********** Navbar ***********/
 
 .navbar-custom {
@@ -162,9 +163,9 @@ a:focus {
         color: #353535;
         border-bottom: 3px solid #353535;    
         background-color: transparent;
-        -webkit-transition: border-bottom .1s ease-in-out;
-        -moz-transition: border-bottom .1s ease-in-out;
-        transition: border-bottom .1s ease-in-out;        
+        -webkit-transition: border-bottom .2s ease-in;
+        -moz-transition: border-bottom .2s ease-in;
+        transition: border-bottom .2s ease-in;
     }    
     .navbar-custom .nav li.active a {
         color: #353535;
@@ -174,44 +175,174 @@ a:focus {
     }    
 }
 
+/*********** Social Icons ***********/
+
+/* Wrapper */
+.icon-button {
+    background-color: white;
+    border-radius: 5rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3.0rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 5rem;
+}
+
+/* Circle */
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+    width: 0;
+}
+.icon-button:hover span {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin: -2.5rem;
+}
+.twitter span {
+    background-color: #4099ff;
+}
+.angellist span {
+    background-color: #000000;
+}
+.github span {
+    background-color: #333333;
+}
+.youtube span {
+    background-color: #cd201f;
+}
+.android span {
+    background-color: #A4C639;
+}
+.mail span {
+    background-color: #34495e;
+}
+.linkedin span {
+    background-color: #0077B5;
+}
+.scribd span {
+    background-color: #1a7bba;
+}
+
+/* Icons */
+.icon-button i {
+    background: none;
+    color: white;
+    height: 5rem;
+    left: 0;
+    line-height: 5rem;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+    width: 5rem;
+    z-index: 10;
+}
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+.icon-button .icon-angellist {
+    color: #000000;
+}
+.icon-button .icon-github {
+    color: #333333;
+}
+.icon-button .icon-youtube {
+    color: #cd201f;
+}
+.icon-button .icon-android {
+    color: #A4C639;
+}
+.icon-button .icon-mail {
+    color: #34495e;
+}
+.icon-button .icon-linkedin {
+    color: #0077B5;
+}
+.icon-button .icon-scribd {
+    color: #1a7bba;
+}
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-angellist,
+.icon-button:hover .icon-github,
+.icon-button:hover .icon-youtube,
+.icon-button:hover .icon-android,
+.icon-button:hover .icon-mail,
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .icon-scribd {
+    color: white;
+}
+
 /*********** Index ***********/
 
-.intro {
+#introme-mobile {
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    visibility: visible;
+}
+
+#intro {
     display: table;
     width: 100%;
     height: 100%;
     padding: 100px 0;
-    background: url(/images/introme.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
     color: #fff;
+    text-align: center;
 }
 
-.intro .intro-body {
+#intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
+#intro .intro-body .brand-heading {
     font-size: 40px;
 }
 
-.intro .intro-body .intro-text {
+#intro .intro-body .intro-text {
     font-size: 18px;
 }
 
 @media(min-width:768px) {
-    .intro {
+
+    #introme-mobile {
+        display: none;
+    }    
+    #intro {
         height: 100%;
         padding: 0;
+
+        background: url(/images/introme.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
-    .intro .intro-body .brand-heading {
+    #intro .intro-body .brand-heading {
         font-size: 100px;
     }
-    .intro .intro-body .intro-text {
+    #intro .intro-body .intro-text {
         font-size: 26px;
     }
 }
