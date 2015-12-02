@@ -295,11 +295,19 @@ a:focus {
 
 /*********** Index ***********/
 
-#introme-mobile {
+#introme-small-screen {
     height: 300px;
     width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     border: 5px solid white;
-    visibility: visible;
+    background-color: #337EDA;
+    display: block;
+}
+
+#introme-big-screen {
+    width: 100%;
+    display: none;
 }
 
 #intro {
@@ -308,41 +316,34 @@ a:focus {
     height: 100%;
     padding: 100px 0;
     color: #fff;
+    background-color: #95a5a6;
     text-align: center;
 }
 
-#intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#intro .intro-body .brand-heading {
+#intro .brand-heading {
     font-size: 40px;
 }
 
-#intro .intro-body .intro-text {
+#intro .intro-text {
     font-size: 18px;
 }
 
 @media(min-width:768px) {
-
-    #introme-mobile {
+    #introme-big-screen {
+        width: 100%;
+        display: block;
+    }
+    #introme-small-screen {
         display: none;
     }    
     #intro {
-        height: 100%;
-        padding: 0;
-
-        background: url(/images/introme.jpg) no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        height: auto;
+        padding: 100px 0;
     }
-    #intro .intro-body .brand-heading {
+    #intro .brand-heading {
         font-size: 100px;
     }
-    #intro .intro-body .intro-text {
+    #intro .intro-text {
         font-size: 26px;
     }
 }
