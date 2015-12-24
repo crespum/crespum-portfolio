@@ -3,19 +3,9 @@ block vars
   -var nav_selected = 'Projects'; //default
 
 block content
-  -var media_path = "images/projects/";
+  -var media_path = "/images/projects/";
   section#projects
-    .container
-      h1.title Projects I've been working on
-      row
-        each val, key in projects
-          .col-md-4
-            h3.center=val.title
-            p=val.brief
-              a(href="projects/"+key)
-                .img-box
-                  img.img-responsive.secondary(src=media_path+val.media.img_logo)
-                  img.img-responsive.primary(src=media_path+val.media.img_mini)
+    h1.title Projects I've been working on
     each val, key in projects
       .col-md-4.col-full-width
         a(href="projects/"+key).link-img

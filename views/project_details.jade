@@ -3,7 +3,40 @@ block vars
   -var nav_selected = 'Projects'; //default
 
 block content
-  -var media_path = "images/projects/";
+  -var media_path = "/images/projects/";
+  header#img-header
+      img(style='background-image: url(' + media_path + project.media.img_mini +');')
+      .row#title
+        .col-md-6.col-md-offset-3
+          h1= title
+  section#company_details
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          .col-md-6
+            img(src=media_path+project.media.img_logo)
+           .col-md-6
+            p
+              span.fa.fa-clock-o
+              if(project.activity_period.active)
+                = project.activity_period.start_date+" - present"
+              else
+                = project.activity_period.start_date+" - "+project.activity_period.completition_date
+            p
+              span.fa.fa-link
+              a(href=project.links.company_web)= project.links.company_web
+            p
+              span.fa.fa-hashtag
+              each val,index in project.technologies
+                if (project.technologies.length != index+1)
+                  = val+", "
+                else
+                  = val
   section#project_details
     .container
-      h1.title= title
+      .row
+        .col-md-8.col-md-offset-2
+          h1.title Details
+          p= project.description
+          h1.title Media
+          h1.title Blog posts

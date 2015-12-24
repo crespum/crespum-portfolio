@@ -4,7 +4,7 @@
     "brief": "Embedded software engineer for a wereable",
     "media": {
       "img_mini": "maintool.jpg",
-      "img_logo": "logo_maintool.png",
+      "img_logo": "logo_maintool_dark.png",
       "img_header": "",
       "img_list": [
         "",
@@ -16,15 +16,15 @@
       "",
       ""
     ],
-    "description": "",
-    "technologies": "",
+    "description": "The MainTool strap transforms any regular timepice into a smart watch while keeping the elegance of the traditional.",
+    "technologies": ["embedded", "firmware", "IoT", "C", "C++", "wereables"],
     "activity_period": {
-      "start_date": "",
+      "start_date": "July 2015",
       "completition_date": "",
       "active": true
     },
     "links": {
-      "company_web": "",
+      "company_web": "http://maintool.me",
       "project_web": ""
     }
   },
@@ -74,7 +74,7 @@
       "",
       ""
     ],
-    "description": "",
+    "description": "Humsat é un proxecto humanitario.",
     "technologies": "",
     "activity_period": {
       "start_date": "",
