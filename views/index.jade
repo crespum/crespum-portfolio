@@ -36,5 +36,15 @@ block content
           a.icon-button.scribd(href='https://www.scribd.com/xbcrespo')
             i.fa.fa-scribd.icon-scribd
             span
-  section
-    .test texto de proba
+  -var media_path = "/images/projects/";
+  section#projects
+    h1.title Projects I've been working on
+    .row.row-full-width
+      each val, key in projects
+        .col-md-4.col-full-width
+          a(href="projects/"+key).link-img
+            .img-text
+              img.img-responsive(src=media_path+val.media.img_mini)
+              .caption.center
+                h2=val.title
+                p=val.brief

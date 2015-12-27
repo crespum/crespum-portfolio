@@ -7,11 +7,7 @@ var projects_db = JSON.parse(fs.readFileSync('routes/projects_db.json', 'utf8'))
 //var db = new loki('projects'); 
 
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Xabier Crespo' });
-});
-
-router.get('/projects', function(req, res, next) {
-    res.render('projects', { title: 'Projects', projects: projects_db });
+    res.render('index', { title: 'Xabier Crespo', projects: projects_db });
 });
 
 router.param('project', function (req, res, next, project) {
