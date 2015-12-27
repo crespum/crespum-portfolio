@@ -27,7 +27,7 @@ block content
               a(href=project.links.company_web)= project.links.company_web
             p
               span.fa.fa-hashtag
-              each val,index in project.technologies
+              each val, index in project.technologies
                 if (project.technologies.length != index+1)
                   = val+", "
                 else
@@ -39,4 +39,9 @@ block content
           h1.title Details
           p= project.description
           h1.title Media
+          .row
+            each val in project.media.img_list
+              .col-md-4.col-xs-6.cover-card(style='background-image: url(' + media_path + val +');')
+                p
+                  span.fa.fa-search-plus.fa-2x
           h1.title Blog posts

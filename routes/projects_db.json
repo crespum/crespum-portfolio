@@ -7,8 +7,8 @@
       "img_logo": "logo_maintool_dark.png",
       "img_header": "",
       "img_list": [
-        "",
-        ""
+        "maintool/app.png",
+        "maintool/features.jpg"
       ],
       "video": ""
     },
@@ -65,8 +65,11 @@
       "img_logo": "logo_uvigo.png",
       "img_header": "",
       "img_list": [
-        "",
-        ""
+        "humsat/equipo.jpg",
+        "humsat/humsat.jpg",
+        "humsat/lanzador.jpg",
+        "humsat/systemconcept.png",
+        "humsat/systemconcept2.jpg"
       ],
       "video": ""
     },
@@ -82,8 +85,8 @@
       "active": true
     },
     "links": {
-      "company_web": "",
-      "project_web": ""
+      "company_web": "https://uvigo.gal",
+      "project_web": "http://www.humsat.org/"
     }
   }
 }
