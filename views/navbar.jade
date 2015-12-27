@@ -1,7 +1,7 @@
 // Static navbar
 -var menu = { 'Home': '/', 'Projects': '/projects', 'Blog': '/blog' };
 
-nav.navbar.navbar-custom.navbar-fixed-top.navbar-inverse(role='navigation')
+nav.navbar.navbar-custom.navbar-fixed-top.navbar-inverse.navbar-light(role='navigation')
   .container
     .navbar-header
       button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -19,4 +19,4 @@ nav.navbar.navbar-custom.navbar-fixed-top.navbar-inverse(role='navigation')
                 a(href=val)= key
             else
               li
-                a(href=val)= key          
+                a(href=val)= key
