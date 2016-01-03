@@ -43,7 +43,7 @@ p {
 @media(min-width:768px) {
     p {
         margin: 0 0 15px;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.6;
     }
 }
@@ -165,9 +165,11 @@ a:focus {
 
     .navbar-custom .nav li.active a:hover {
         background-color: rgba(0, 0, 0, 0);
-        border-bottom: 5px solid #FF5722;
-        color: #FAFAFA;
+        color: #FF5722;
         font-weight: bold;
+        -webkit-transition: color .2s ease-in;
+        -moz-transition: color .2s ease-in;
+        transition: color .2s ease-in;        
     }
 
     .navbar-custom .nav li a:hover {
@@ -185,12 +187,6 @@ a:focus {
         font-weight: bold;
         border-bottom: 3px solid #FF5722;
         background-color: rgba(0, 0, 0, 0);
-    }
-
-    .navbar-custom .nav li.active a:hover {
-        border-bottom: 3px solid #FF5722;
-        color: #FF5722;
-        font-weight: bold;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -211,13 +207,6 @@ a:focus {
         font-weight: bold;
         border-bottom: 3px solid #FF5722;
         background-color: rgba(0, 0, 0, 0);
-    }
-
-    .navbar-custom.top-nav-collapse .nav li.active a:hover {
-        background-color: rgba(0, 0, 0, 0);
-        border-bottom: 5px solid #FF5722;
-        color: #353535;
-        font-weight: bold;
     }
 
     .navbar-custom.top-nav-collapse .nav li a:hover {
@@ -241,6 +230,10 @@ a:focus {
         border-bottom: 3px solid #FF5722;
         color: #FF5722;
         font-weight: bold;
+        -webkit-transition: color .2s ease-in-out;
+        -moz-transition: color .2s ease-in-out;
+        transition: color .2s ease-in-out;
+
     }    
 }
 
@@ -393,7 +386,7 @@ footer {
     height: 100%;
     padding: 100px 0;
     color: #444;
-    background-color: #95a5a6;
+    background-color: #90A4AE;
     text-align: center;
 }
 
@@ -489,6 +482,12 @@ footer {
 #project_details {
 }
 
+#project_details .articles {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
 #img-header {
     position: relative;
 }
@@ -533,8 +532,7 @@ footer {
     padding-right: 10px;
 }
 
-.cover-card {
-    border: 2px solid white;
+.gallery-card {
     background: silver;
     padding: 0px;
     margin: 0px;
@@ -546,16 +544,34 @@ footer {
     background-position: 50%;
 }
 
-.cover-card > p {
+.gallery-card > p.img {
     text-align: center;
     line-height: 200px;
     background-color: rgba(6,6,6,0.0);
     color: rgba(6,6,6,0.0);
     width: 100%;
     height: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.cover-card:hover > p {
-    background-color: rgba(6,6,6,0.3);
-    color: white;
+.gallery-card > p.video, p.article {
+    text-align: center;
+    line-height: 200px;
+    background-color: rgba(91, 91, 91, 0.3);
+    color: #FAFAFA;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.gallery-card:hover > p {
+    background-color: rgba(91, 91, 91, 0.5);
+    color: #FAFAFA;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }

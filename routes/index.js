@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var markdown = require('marked');
 var projects_db = JSON.parse(fs.readFileSync('routes/projects_db.json', 'utf8'));
 
 //var loki = require('lokijs');
@@ -18,7 +19,7 @@ router.param('project', function (req, res, next, project) {
 });
 
 router.get('/projects/:project', function(req, res, next) {
-    res.render('project_details', { title: req.project.title, project: req.project });
+    res.render('project_details', { title: req.project.title, project: req.project, markdown: markdown });
 });
 
 module.exports = router;
