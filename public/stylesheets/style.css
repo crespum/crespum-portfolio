@@ -77,6 +77,7 @@ a:focus {
     border-bottom: 1px solid #ddd;
     text-transform: uppercase;
     background: rgba(250, 250, 250, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
 
 .navbar-custom .navbar-brand {
@@ -140,6 +141,7 @@ a:focus {
 
     .navbar-custom {
         background: rgba(238, 238, 238, 0);
+        box-shadow: none;
         border-bottom: none;
         padding: 10px 0;
         letter-spacing: 1px;
@@ -169,7 +171,7 @@ a:focus {
         font-weight: bold;
         -webkit-transition: color .2s ease-in;
         -moz-transition: color .2s ease-in;
-        transition: color .2s ease-in;        
+        transition: color .2s ease-in;
     }
 
     .navbar-custom .nav li a:hover {
@@ -192,6 +194,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         background-color: rgba(238, 238, 238, 0.95);
+        box-shadow: rgba(0, 0, 0, 0.258824) 0px 3px 6px 0px;
     }
 
     .navbar-custom.top-nav-collapse .navbar-brand {
@@ -490,9 +493,11 @@ footer {
 
 #img-header {
     position: relative;
+    z-index: -99;
 }
 
 #img-header img {
+    background-attachment: fixed;
     height: 400px;
     width: 100%;
     -webkit-background-size: cover;
@@ -521,6 +526,7 @@ footer {
 }
 
 #company_details {
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px -3px 5px 0px;
     padding: 30px 0;
 }
 
