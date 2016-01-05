@@ -14,9 +14,9 @@ block content
     .container
       .row
         .col-md-8.col-md-offset-2
-          .col-md-6
+          .col-md-6.center.vcenter
             img(src=media_path+project.media.img_logo)
-           .col-md-6
+          .col-md-6.vcenter
             p
               span.fa.fa-clock-o
               if(project.activity_period.active)
@@ -25,7 +25,7 @@ block content
                 = project.activity_period.start_date+" - "+project.activity_period.completition_date
             p
               span.fa.fa-link
-              a(href=project.links.company_web)= project.links.company_web
+              a(href=project.url)= project.url
             p
               span.fa.fa-hashtag
               each val, index in project.technologies
@@ -33,6 +33,9 @@ block content
                   = val+", "
                 else
                   = val
+            p
+              span.fa.fa-building-o
+              a(href=project.company.url)= project.company.name
   section#project_details
     .container
       .row

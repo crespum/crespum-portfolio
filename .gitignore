@@ -36,3 +36,6 @@ node_modules
 # IDE
 *.sublime-project
 *.sublime-workspace
+
+# Authorization pending
+projects_db.json

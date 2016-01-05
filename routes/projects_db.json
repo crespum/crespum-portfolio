@@ -1,92 +1,129 @@
 {
-  "maintoolstrap": {
-    "title": "Maintool Strap",
-    "brief": "Embedded software engineer for a wereable",
-    "media": {
-      "img_mini": "maintool.jpg",
-      "img_logo": "logo_maintool_dark.png",
-      "img_header": "",
-      "img_list": [
-        "maintool/app.png",
-        "maintool/features.jpg"
-      ],
-      "video": ""
-    },
-    "tags": [
-      "",
-      ""
-    ],
-    "description": "The MainTool strap transforms any regular timepice into a smart watch while keeping the elegance of the traditional.",
-    "technologies": ["embedded", "firmware", "IoT", "C", "C++", "wereables"],
-    "activity_period": {
-      "start_date": "July 2015",
-      "completition_date": "",
-      "active": true
-    },
-    "links": {
-      "company_web": "http://maintool.me",
-      "project_web": ""
-    }
-  },
   "femtoxat": {
-    "title": "FemtoXat",
+    "title": "FemtoXat EPS",
     "brief": "Development of an Electrical Power Subsystem",
+    "url": "http://xcrespo.github.io/FemtoXat-slides/#/",
     "media": {
-      "img_mini": "femtoxat.jpg",
-      "img_logo": "logo_uvigo.png",
+      "img_mini": "femtoxat/femtoxat.jpg",
+      "img_logo": "femtoxat/logo_femtoxat.png",
       "img_header": "",
       "img_list": [
-        "",
-        ""
+        "femtoxat/concepto_humsat.png",
+        "femtoxat/concepto_femto.png",
+        "femtoxat/proto-foto.jpg"
       ],
-      "video": ""
+      "videos_list": [
+        "FYJs3OHshxo"
+      ],
+      "articles_list": [
+        {
+          "editor": "DUVI",
+          "title": "FemtoXat, un satélite único no mundo",
+          "url": "http://duvi.uvigo.es/index.php?option=com_content&task=view&id=9036"
+        },
+        {
+          "editor": "Agencia sinc",
+          "title": "FemtoXat, un satélite gallego único en el mundo",
+          "url": "http://www.agenciasinc.es/Noticias/FemtoXat-un-satelite-gallego-unico-en-el-mundo"
+        },
+        {
+          "editor": "Faro de Vigo",
+          "title": "La Universidad prevé enviar al espacio su tercer satélite en la segunda mitad de 2015",
+          "url": "http://www.farodevigo.es/gran-vigo/2014/10/11/universidad-preve-enviar-espacio-tercer/1110054.html"
+        }
+      ]
     },
     "tags": [
       "",
       ""
     ],
-    "description": "",
-    "technologies": "",
+    "description": "![alt text](/images/projects/femtoxat/proto.png 'Logo Title Text 1')",
+    "technologies": ["hardware", "pcb design", "low power", "batteries"],
     "activity_period": {
-      "start_date": "",
-      "completition_date": "",
-      "active": true
+      "start_date": "January 2013",
+      "completition_date": "June 2014",
+      "active": false
     },
-    "links": {
-      "company_web": "",
-      "project_web": ""
+    "company": {
+      "name": "Universidade de Vigo",
+      "url": "http://uvigo.gal"
     }
   },
   "humsat": {
     "title": "Humsat",
-    "brief": "Researcher",
+    "brief": "Satellite operator",
+    "url": "http://www.humsat.org/",
     "media": {
-      "img_mini": "humsat.jpg",
-      "img_logo": "logo_uvigo.png",
+      "img_mini": "humsat/humsat.jpg",
+      "img_logo": "humsat/logo_humsat.png",
       "img_header": "",
       "img_list": [
         "humsat/equipo.jpg",
-        "humsat/humsat.jpg",
+        "humsat/humsat1.jpg",
         "humsat/lanzador.jpg",
         "humsat/systemconcept.png",
         "humsat/systemconcept2.jpg"
       ],
-      "video": ""
+      "videos_list": [
+        "Efnf28qbXGo",
+        "LRXw8AbsDTY",
+        "jsfL19FV3qg"
+      ],
+      "articles_list": [
+        {
+          "editor": "Faro de Vigo",
+          "title": "El picosatelite vigués Humsat-D ya está en órbita",
+          "url": "http://www.farodevigo.es/gran-vigo/2013/11/21/picosatelite-vigues-humsat-d-orbita/918557.html"
+        },
+        {
+          "editor": "Faro de Vigo",
+          "title": "El HumSat-D valida 'al 100%'' la operatividad de la red mundial de satélites que coordinará Vigo",
+          "url": "http://www.farodevigo.es/gran-vigo/2014/04/21/humsat-d-valida-100-operatividad/1008585.html"
+        },
+        {
+          "editor": "Faro de Vigo",
+          "title": "Segundo integrante de la red internacional Humsat",
+          "url": "http://www.farodevigo.es/gran-vigo/2015/09/18/segundo-integrante-red-internacional-humsat/1315749.html"
+        },
+        {
+          "editor": "El País",
+          "title": "Vigo pone en órbita el primer satélite de la ONU para un proyecto humanitario",
+          "url": "http://economia.elpais.com/economia/2013/11/21/agencias/1385046280_154682.html"
+        },
+        {
+          "editor": "La Voz de Galicia",
+          "title": "La Universidad califica de hito el lanzamiento del Humsat-D",
+          "url": "http://www.lavozdegalicia.es/noticia/vigo/2013/11/21/universidad-califica-hito-lanzamiento-humsat-d/0003_2013111385049907712241.htm"
+        },
+        {
+          "editor": "La Voz de Galicia",
+          "title": "Las 1.525 órbitas del Humsat-D",
+          "url": "http://www.lavozdegalicia.es/noticia/vigo/2014/03/06/humsat-d-cumple-1525-orbitas/00031394122461397970421.htm"
+        },
+        {
+          "editor": "Faro de Vigo",
+          "title": "Segundo integrante de la red internacional Humsat",
+          "url": "http://www.farodevigo.es/gran-vigo/2015/09/18/segundo-integrante-red-internacional-humsat/1315749.html"
+        }
+      ]
     },
     "tags": [
       "",
       ""
     ],
-    "description": "Humsat é un proxecto humanitario.",
-    "technologies": "",
+    "description": "Humsat is an international educational initiative, supported by multiple international organizations such as [ESA](http://www.esa.int/ESA) and [UNOOSA](http://www.unoosa.org/oosa/index.html), for building a constellation of nano-satellites providing communication capabilities to areas without infrastructure. The first satellite demonstrator, Humsat-D, was developed in the University of Vigo, resulting in the second Galician satellite.\n\nThe spacecraft was successfully launched on November 2013 and I took part on this project as a GS operator from the MCC of the University of Vigo. This activities include Operation of the Satellite (routinely operations, experiments programming, telemetry download, etc) and the facilities maintenance (antennas calibration, rotor maintenance, etc).",
+    "technologies": [
+      "radiofrequency",
+      "radio amateur"
+    ],
     "activity_period": {
-      "start_date": "",
-      "completition_date": "",
-      "active": true
+      "start_date": "November 2013",
+      "completition_date": "November 2014",
+      "active": false
     },
-    "links": {
-      "company_web": "https://uvigo.gal",
-      "project_web": "http://www.humsat.org/"
+    "company": {
+      "name": "Universidade de Vigo",
+      "url": "https://uvigo.gal"
     }
   }
 }

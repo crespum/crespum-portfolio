@@ -34,6 +34,12 @@ h6 {
     text-align: center;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 p {
     margin: 0 0 5px;
     font-size: 13px;
@@ -498,6 +504,7 @@ footer {
 
 #img-header img {
     background-attachment: fixed;
+    background-position: center;
     height: 400px;
     width: 100%;
     -webkit-background-size: cover;
@@ -531,7 +538,8 @@ footer {
 }
 
 #company_details img {
-    width: 100%;
+    max-height: 180px;
+    max-width: 100%;
 }
 
 #company_details span {
