@@ -17,25 +17,29 @@ block content
           .col-md-6.center.vcenter
             img(src=media_path+project.media.img_logo)
           .col-md-6.vcenter
-            p
-              span.fa.fa-clock-o
-              if(project.activity_period.active)
-                = project.activity_period.start_date+" - present"
-              else
-                = project.activity_period.start_date+" - "+project.activity_period.completition_date
-            p
-              span.fa.fa-link
-              a(href=project.url)= project.url
-            p
-              span.fa.fa-hashtag
-              each val, index in project.technologies
-                if (project.technologies.length != index+1)
-                  = val+", "
+            if project.activity_period
+              p
+                span.fa.fa-clock-o
+                if(project.activity_period.active)
+                  = project.activity_period.start_date+" - present"
                 else
-                  = val
-            p
-              span.fa.fa-building-o
-              a(href=project.company.url)= project.company.name
+                  = project.activity_period.start_date+" - "+project.activity_period.completition_date
+            if project.url
+              p
+                span.fa.fa-link
+                a(href=project.url, target='_blank')= project.url
+            if project.technologies  
+              p
+                span.fa.fa-hashtag
+                each val, index in project.technologies
+                  if (project.technologies.length != index+1)
+                    = val+", "
+                  else
+                    = val
+            if project.company  
+              p
+                span.fa.fa-building-o
+                a(href=project.company.url, target='_blank')= project.company.name
   section#project_details
     .container
       .row
@@ -44,19 +48,21 @@ block content
           div!= markdown(project.description)
           h1.title Media
           .row
-            each val in project.media.img_list
-              a(href=media_path+val, data-lightbox="gallery")
-                .col-md-4.col-xs-6.gallery-card(style='background-image: url(' + media_path + val +');')
-                  p.img
-                    span.fa.fa-search-plus.fa-4x
-            each val in project.media.videos_list
-              a(href='https://www.youtube.com/watch?v=' + val, target='_blank')
-                .col-md-4.col-xs-6.gallery-card(style='background-image: url(http://img.youtube.com/vi/' + val +'/0.jpg);')    
-                  p.video
-                    span.fa.fa-play.fa-4x
+            if project.media.img_list
+              each val in project.media.img_list
+                a(href=media_path+val, data-lightbox="gallery")
+                  .col-md-4.col-xs-6.gallery-card(style='background-image: url(' + media_path + val +');')
+                    p.img
+                      span.fa.fa-search-plus.fa-4x
+            if project.media.videos_list
+              each val in project.media.videos_list
+                a(href='https://www.youtube.com/watch?v=' + val, target='_blank')
+                  .col-md-4.col-xs-6.gallery-card(style='background-image: url(http://img.youtube.com/vi/' + val +'/0.jpg);')    
+                    p.video
+                      span.fa.fa-play.fa-4x
           .articles
-            each article in project.media.articles_list
-              a(href=article.url, target='_blank')= article.title
-              =' - ' + article.editor
-              br
-          h1.title Blog posts
+            if project.media.articles_list
+              each article in project.media.articles_list
+                a(href=article.url, target='_blank')= article.title
+                =' - ' + article.editor
+                br

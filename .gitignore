@@ -37,5 +37,8 @@ node_modules
 *.sublime-project
 *.sublime-workspace
 
+# Google analytics
+google-tag-manager.jade
+
 # Authorization pending
 projects_db.json
