@@ -45,9 +45,10 @@ block content
           h1.title Media
           .row
             each val in project.media.img_list
-              .col-md-4.col-xs-6.gallery-card(style='background-image: url(' + media_path + val +');')
-                p.img
-                  span.fa.fa-search-plus.fa-4x
+              a(href=media_path+val, data-lightbox="gallery")
+                .col-md-4.col-xs-6.gallery-card(style='background-image: url(' + media_path + val +');')
+                  p.img
+                    span.fa.fa-search-plus.fa-4x
             each val in project.media.videos_list
               a(href='https://www.youtube.com/watch?v=' + val, target='_blank')
                 .col-md-4.col-xs-6.gallery-card(style='background-image: url(http://img.youtube.com/vi/' + val +'/0.jpg);')    

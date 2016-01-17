@@ -7,9 +7,10 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     title= title
-    link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/libs/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href="/libs/font-awesome/css/font-awesome.min.css", rel="stylesheet")
+    link(href='/libs/lightbox2/dist/css/lightbox.min.css', rel="stylesheet")
     link(href='/stylesheets/style.css', rel='stylesheet')
-    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel="stylesheet")
   body
     block vars
       -var nav_selected = 'Home'; //default
@@ -18,6 +19,7 @@ html(lang='en')
     block content
     include footer.jade
     // Placed at the end of the document so the pages load faster
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/libs/jquery/dist/jquery.min.js')
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js')
     script(src='/javascripts/crespum.js')
+    script(src='/libs/lightbox2/dist/js/lightbox.min.js')
