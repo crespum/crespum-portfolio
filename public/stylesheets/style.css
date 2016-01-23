@@ -11,10 +11,11 @@ html {
 }
 
 h1.title {
+    font-size: 30px;    
     text-align: center;
     padding-bottom: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: 1px solid gray;
@@ -30,6 +31,40 @@ h6 {
     font-weight: 600;
 }
 
+p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media(min-width:768px) {    
+    h1.title {
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-bottom: 1px solid gray;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 10px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0 0 15px;
+        font-size: 16px;
+        line-height: 1.6;
+    }    
+}
+
 .center {
     text-align: center;
 }
@@ -38,20 +73,6 @@ h6 {
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
-
-p {
-    margin: 0 0 5px;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-@media(min-width:768px) {
-    p {
-        margin: 0 0 15px;
-        font-size: 16px;
-        line-height: 1.6;
-    }
 }
 
 a {
@@ -496,6 +517,10 @@ footer {
     margin-top: 30px;
     font-size: 15px;
     line-height: 30px;
+}
+
+#project_details img {
+    max-width: 100%;
 }
 
 #img-header {
