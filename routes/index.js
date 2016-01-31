@@ -2,13 +2,14 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 var markdown = require('marked');
-var projects_db = JSON.parse(fs.readFileSync('routes/projects_db.json', 'utf8'));
+var projects_db = JSON.parse(fs.readFileSync('public/databases/projects.json', 'utf8'));
+var socials_db = JSON.parse(fs.readFileSync('public/databases/socials.json', 'utf8'));
 
 //var loki = require('lokijs');
 //var db = new loki('projects'); 
 
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Xabier Crespo', projects: projects_db });
+    res.render('index', { title: 'Xabier Crespo', projects: projects_db, socials: socials_db });
 });
 
 router.param('project', function (req, res, next, project) {
