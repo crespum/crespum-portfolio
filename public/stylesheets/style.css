@@ -97,6 +97,10 @@ a:focus {
    margin: 0 !important;
 }
 
+span.line-intro {
+    padding-right: 10px;
+}
+
 /*********** Navbar ***********/
 
 .navbar-custom {
@@ -572,10 +576,6 @@ footer {
 #company_details img {
     max-height: 180px;
     max-width: 100%;
-}
-
-#company_details span {
-    padding-right: 10px;
 }
 
 #company_details #company_logo {

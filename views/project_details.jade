@@ -19,18 +19,18 @@ block content
           .col-md-6.vcenter
             if project.activity_period
               p
-                span.fa.fa-clock-o
+                span.line-intro.fa.fa-clock-o
                 if(project.activity_period.active)
                   = project.activity_period.start_date+" - present"
                 else
                   = project.activity_period.start_date+" - "+project.activity_period.completition_date
             if project.url
               p
-                span.fa.fa-link
+                span.line-intro.fa.fa-link
                 a(href=project.url, target='_blank')= project.url
             if project.technologies  
               p
-                span.fa.fa-hashtag
+                span.line-intro.fa.fa-hashtag
                 each val, index in project.technologies
                   if (project.technologies.length != index+1)
                     = val+", "
@@ -38,7 +38,7 @@ block content
                     = val
             if project.company  
               p
-                span.fa.fa-building-o
+                span.line-intro.fa.fa-building-o
                 a(href=project.company.url, target='_blank')= project.company.name
   section#project_details
     .container
@@ -63,6 +63,7 @@ block content
           .articles
             if project.media.articles_list
               each article in project.media.articles_list
+                span.line-intro.fa.fa-newspaper-o
                 a(href=article.url, target='_blank')= article.title
                 =' - ' + article.editor
                 br

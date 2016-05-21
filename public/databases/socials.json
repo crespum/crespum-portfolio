@@ -10,7 +10,7 @@
     "fa": "fa-twitter"
   },
   "mail": {
-    "URL": "mailto:xabicrespog@gmail.com",
+    "URL": "mailto:xabi@crespum.eu",
     "color": "#34495e",
     "fa": "fa-envelope"
   },
@@ -38,5 +38,8 @@
     "URL": "https://www.scribd.com/crespum",
     "color": "#1a7bba",
     "fa": "fa-scribd"
+  },
+  "medium": {
+    "URL": "https://medium.com/@crespum"
   }
 }
