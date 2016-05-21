@@ -4,10 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var ghost = require('ghost');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
-//var projects = require('./routes/projects');
 
 var app = express();
 
@@ -25,8 +24,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/libs', express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', routes);
-app.use('/users', users);
 app.use('/projects', routes);
+ghost({ config: path.join(__dirname, 'ghost_config.js') }).then(function (ghostServer) {
+  app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
+  ghostServer.start(app);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
