@@ -1,4 +1,129 @@
 {
+    "kien": {
+    "title": "Kien",
+    "brief": "Software engineer consultant",
+    "url": "https://indiegogo.com/projects/kien-the-first-flexible-sound-system",
+    "media": {
+      "img_mini": "kien/kien_thumbnail.jpg",
+      "img_logo": "kien/logo.png",
+      "img_header": "",
+      "img_list": [
+        "kien/img1.jpg",
+        "kien/img3.jpg",
+        "kien/img6.jpg"
+      ],
+      "videos_list": [
+        "OVyuMKrM6xg",
+        "U0zH1ktzZXk"
+      ]
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understanding is by visiting their [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI'm helping them with the software of the speakers and the mobile app. I know what you're thinking, *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Of course you can just use Spotify, but we need an app for some configurations and for some cool features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
+    "technologies": [
+      "Android",
+      "Linux",
+      "BLE",
+      "Python",
+      "Bash"
+    ],
+    "activity_period": {
+      "start_date": "December 2015",
+      "active": true
+    },
+    "company": {
+      "name": "Kien",
+      "url": "http://kien.io"
+    }
+  },
+  "maintoolstrap": {
+    "title": "Maintool Strap",
+    "brief": "Freelance embedded software engineer",
+    "url": "http://maintool.me",
+    "media": {
+      "img_mini": "maintoolstrap/maintool.jpg",
+      "img_logo": "maintoolstrap/logo_maintool_dark.png",
+      "img_header": "",
+      "img_list": [
+        "maintoolstrap/app.png",
+        "maintoolstrap/features.jpg"
+      ],
+      "videos_list": [
+        "gNAvGyvfD80"
+      ],
+      "articles_list": [
+        {
+          "editor": "El Mundo",
+          "title": "Disfrutar de un 'smartwatch' sin sacrificar el reloj clásico",
+          "url": "http://www.elmundo.es/economia/2015/09/30/560c21aae2704e896b8b45a3.html"
+        }
+      ]
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "The MainTool strap transforms any regular timepiece into a smart watch while keeping the elegance of traditional brands. To achieve this, the electronics and sensors are put inside a leather or a rubber strap and allow the user to track parameters such as steps, heart rate, skin temperature and many other health variables. Those measurements are sent to a mobile phone via Bluetooth Low Energy.\n\nMy job is to develop the embedded software of the strap, including:\n\n* Communications protocol between strap and mobile phone based on BLE standard services when possible and on custom ones if not. \n\n* Data acquisition for the *simple* sensors.\n\n* Algorithms for the *complex* sensors (heart rate and pedometer): I've adapted algorithms broadly used for a low power consumption and low signal level.\n\nI've also been working on the [landing page](http://maintool.me), the [blog](http://blog.maintool.me), the Android app and server maintenance.",
+    "technologies": [
+      "embedded",
+      "firmware",
+      "IoT",
+      "C",
+      "C++",
+      "wereable",
+      "BLE"
+    ],
+    "activity_period": {
+      "start_date": "July 2015",
+      "completition_date": "March 2016",      
+      "active": false
+    },
+    "company": {
+      "name": "MainTool SAS",
+      "URL": "http://maintool.me"
+    }
+  },
+  "fdm": {
+    "title": "Festas do Monte",
+    "brief": "Android app for promoting local events",
+    "url": "https://play.google.com/store/apps/details?id=com.caracocha.fdm",
+    "media": {
+      "img_mini": "fdm/thumbnail.jpg",
+      "img_logo": "fdm/logo.png",
+      "img_header": "",
+      "img_list": [
+        "fdm/screenshot1.jpg",
+        "fdm/screenshot2.jpg"
+      ],
+      "articles_list": [
+        {
+          "editor": "Faro de Vigo",
+          "title": "Un joven crea la primera aplicación con la agenda cultural de A Guarda",
+          "url": "http://www.farodevigo.es/comarcas/2015/07/14/joven-crea-primera-aplicacion-agenda/1277440.html"
+        },
+        {
+          "editor": "InfoMiño",
+          "title": "Un joven guardés crea una aplicación para teléfonos que muestra la agenda cultural de la zona",
+          "url": "http://www.infominho.com/index.php/id/51/objeto/26706/claves/UN-JOVEN-GUARD%C3%89S-CREA-UNA-APLICACI%C3%93N-PARA-TEL%C3%89FONOS-M%C3%93VILES-QUE-MUESTRA-LA-AGENDA-CULTURAL-DE-LA-ZONA"
+        }
+      ]
+    },
+    "tags": [
+      "",
+      ""
+    ],
+    "description": "This project was born because I wanted to learn about Android development. Instead of working on some projects that would just live inside my computer I wanted to create something useful.\n\nThe first version of this app [was created in 2013](https://play.google.com/store/apps/details?id=com.caracocha.fdm13) to promote *as Festas do Monte*, the most important event celebrated in my hometown, [A Guarda](https://en.wikipedia.org/wiki/A_Guarda). Right now I've launched a new version that not only contains events during that celebration but all over the year. The events are inside a JSON file hosted in a server so I can update them without having to update the app.\n\nLike all of my personal projects, the source code is stored in [GitHub](https://github.com/xcrespo/FDM) and everybody is welcome to contribute. Open source will make us evolve and learn faster!",
+    "technologies": [
+      "Android",
+      "Java"
+    ],
+    "activity_period": {
+      "start_date": "June 2013",
+      "active": true
+    }
+  },
   "femtoxat": {
     "title": "FemtoXat EPS",
     "brief": "Development of an Electrical Power Subsystem",
@@ -165,82 +290,36 @@
       "active": false
     }
   },
-  "kien": {
-    "title": "Kien",
-    "brief": "Software leader",
-    "url": "https://indiegogo.com/projects/kien-the-first-flexible-sound-system",
-    "media": {
-      "img_mini": "kien/kien_thumbnail.jpg",
-      "img_logo": "kien/logo.png",
-      "img_header": "",
-      "img_list": [
-        "kien/img1.jpg",
-        "kien/img3.jpg",
-        "kien/img6.jpg"
-      ],
-      "videos_list": [
-        "OVyuMKrM6xg",
-        "U0zH1ktzZXk"
-      ]
-    },
-    "tags": [
-      "",
-      ""
-    ],
-    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understanding is by visiting their [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI'm helping them with the software of the speakers and the mobile app. I know what you're thinking, *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Of course you can just use Spotify, but we need an app for some configurations and for some special features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
-    "technologies": [
-      "Android",
-      "Linux",
-      "BLE",
-      "Python",
-      "Bash"
-    ],
-    "activity_period": {
-      "start_date": "December 2015",
-      "active": true
-    },
-    "company": {
-      "name": "Kien",
-      "url": "http://kien.io"
-    }
-  },
-  "fdm": {
-    "title": "Festas do Monte",
-    "brief": "Android app for promoting local events",
-    "url": "https://play.google.com/store/apps/details?id=com.caracocha.fdm",
+  "satnet": {
+    "title": "SatNet",
+    "brief": "Software developer of a SW for operate small satellites",
+    "url": "https://github.com/satnet-project",
     "media": {
       "img_mini": "fdm/thumbnail.jpg",
-      "img_logo": "fdm/logo.png",
+      "img_logo": "satnet/satnet_logo.png",
       "img_header": "",
       "img_list": [
-        "fdm/screenshot1.jpg",
-        "fdm/screenshot2.jpg"
-      ],
-      "articles_list": [
-        {
-          "editor": "Faro de Vigo",
-          "title": "Un joven crea la primera aplicación con la agenda cultural de A Guarda",
-          "url": "http://www.farodevigo.es/comarcas/2015/07/14/joven-crea-primera-aplicacion-agenda/1277440.html"
-        },
-        {
-          "editor": "InfoMiño",
-          "title": "Un joven guardés crea una aplicación para teléfonos que muestra la agenda cultural de la zona",
-          "url": "http://www.infominho.com/index.php/id/51/objeto/26706/claves/UN-JOVEN-GUARD%C3%89S-CREA-UNA-APLICACI%C3%93N-PARA-TEL%C3%89FONOS-M%C3%93VILES-QUE-MUESTRA-LA-AGENDA-CULTURAL-DE-LA-ZONA"
-        }
+        "satnet/screenshot1.png",
+        "satnet/screenshot2.png"
       ]
     },
     "tags": [
       "",
       ""
     ],
-    "description": "This project was born because I wanted to learn about Android development. Instead of working on some projects that would just live inside my computer I wanted to create something useful.\n\nThe first version of this app [was created in 2013](https://play.google.com/store/apps/details?id=com.caracocha.fdm13) to promote *as Festas do Monte*, the most important event celebrated in my hometown, [A Guarda](https://en.wikipedia.org/wiki/A_Guarda). Right now I've launched a new version that not only contains events during that celebration but all over the year. The events are inside a JSON file hosted in a server so I can update them without having to update the app.\n\nLike all of my personal projects, the source code is stored in [GitHub](https://github.com/xcrespo/FDM) and everybody is welcome to contribute. Open source will make us evolve and learn faster!",
+    "description": "The SATNet project will provide the first network for sharing ground stations in between the members of the community of CubeSat developers. My work consisted in the development of the communications protocol based on Twisted, an event-driven networking engine.",
     "technologies": [
-      "Android",
-      "Java"
+      "Python",
+      "Javascript"
     ],
     "activity_period": {
-      "start_date": "June 2013",
-      "active": true
+      "start_date": "August 2014",
+      "completition_date": "June 2015",
+      "active": false
+    },
+    "company": {
+      "name": "Universidade de Vigo",
+      "url": "http://uvigo.gal"
     }
   }
 }
