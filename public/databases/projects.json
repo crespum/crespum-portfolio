@@ -21,7 +21,7 @@
       "",
       ""
     ],
-    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understanding is by visiting their [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI'm helping them with the software of the speakers and the mobile app. I know what you're thinking, *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Of course you can just use Spotify, but we need an app for some configurations and for some cool features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
+    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understanding is by visiting their [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI'm collaborating with them designing the speakers -mainly software but some hardware advices too- and the mobile app. I know what you're thinking, *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Unlike some competitors, Kien thinks that the user of these speakers should focus on the audio and not on configuring all the music services in the app. The result is that the users will be able to use their usual apps, such as Spotify, and just open Kien's app for some configurations and cool features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
     "technologies": [
       "Android",
       "Linux",
@@ -65,7 +65,7 @@
       "",
       ""
     ],
-    "description": "The MainTool strap transforms any regular timepiece into a smart watch while keeping the elegance of traditional brands. To achieve this, the electronics and sensors are put inside a leather or a rubber strap and allow the user to track parameters such as steps, heart rate, skin temperature and many other health variables. Those measurements are sent to a mobile phone via Bluetooth Low Energy.\n\nMy job is to develop the embedded software of the strap, including:\n\n* Communications protocol between strap and mobile phone based on BLE standard services when possible and on custom ones if not. \n\n* Data acquisition for the *simple* sensors.\n\n* Algorithms for the *complex* sensors (heart rate and pedometer): I've adapted algorithms broadly used for a low power consumption and low signal level.\n\nI've also been working on the [landing page](http://maintool.me), the [blog](http://blog.maintool.me), the Android app and server maintenance.",
+    "description": "The MainTool strap transforms any regular timepiece into a smart watch while keeping the elegance of traditional brands. To achieve this, the electronics and sensors are put inside a leather or a rubber strap and allow the user to track parameters such as steps, heart rate, skin temperature and many other health variables. Those measurements are sent to a mobile phone via Bluetooth Low Energy.\n\nMy job was to develop the embedded software of the strap, including:\n\n* Communications protocol between strap and mobile phone based on BLE standard services when possible and on custom ones if not. \n\n* Data acquisition for the *simple* sensors.\n\n* Algorithms for the *complex* sensors (heart rate and pedometer): I've adapted algorithms broadly used for a low power consumption and low and noisy signal levels.  \n\nOne cool *mini-project* I've been working on was an automatic test bench for the prototypes using common robotics materials such as Arduinos, servomotors and even 3D printed parts!.\n\nI've also been working on the [landing page](http://maintool.me), the [blog](http://blog.maintool.me) and server maintenance. During my last period in the company I was coordinating the software team.",
     "technologies": [
       "embedded",
       "firmware",
@@ -114,10 +114,11 @@
       "",
       ""
     ],
-    "description": "This project was born because I wanted to learn about Android development. Instead of working on some projects that would just live inside my computer I wanted to create something useful.\n\nThe first version of this app [was created in 2013](https://play.google.com/store/apps/details?id=com.caracocha.fdm13) to promote *as Festas do Monte*, the most important event celebrated in my hometown, [A Guarda](https://en.wikipedia.org/wiki/A_Guarda). Right now I've launched a new version that not only contains events during that celebration but all over the year. The events are inside a JSON file hosted in a server so I can update them without having to update the app.\n\nLike all of my personal projects, the source code is stored in [GitHub](https://github.com/xcrespo/FDM) and everybody is welcome to contribute. Open source will make us evolve and learn faster!",
+    "description": "This project was born because I wanted to learn about Android development. Instead of working on some projects that would just live inside my computer I wanted to create something useful. Every year before this popular celebration begins I try to spend some time improving the app and implementing some of the features requested by the users. I find this a good way to learn the last news of the Android's framework.\n\nThe first version of this app [was created in 2013](https://play.google.com/store/apps/details?id=com.caracocha.fdm13) to promote *as Festas do Monte*, the most important event celebrated in my hometown, [A Guarda](https://en.wikipedia.org/wiki/A_Guarda). In 2014 I launched a new version that not only contains events during that celebration but all over the year. The events are inside a JSON file hosted in a server so I can update them without having to update the app.\n\nLike all of my personal projects, the source code is stored in [GitHub](https://github.com/xcrespo/FDM) and everybody is welcome to contribute. Open source will make us evolve and learn faster!",
     "technologies": [
       "Android",
-      "Java"
+      "Java",
+      "JSON"
     ],
     "activity_period": {
       "start_date": "June 2013",
@@ -135,7 +136,8 @@
       "img_list": [
         "femtoxat/concepto_humsat.png",
         "femtoxat/concepto_femto.png",
-        "femtoxat/proto-foto.jpg"
+        "femtoxat/proto-foto.jpg",
+        "femtoxat/final_board.jpg"
       ],
       "videos_list": [
         "FYJs3OHshxo"
@@ -162,7 +164,7 @@
       "",
       ""
     ],
-    "description": "This was my master thesis and consisted in the design, verification and validation of an Electrical Power System from scratch of a 1/3U cubesat (a small satellite). The main problem found was due to the size restrictions and to the use of off-the-shelf components.\n\nThe prototype designed included the Battery Charge Regulator (BCR), different voltage regulators and a board for cutting the power of part of the board when the battery voltage was below a predefined threshold.\n\n![alt text](/images/projects/femtoxat/proto.png 'Block diagram of the prototype')",
+    "description": "This was my master thesis and consisted in the design, verification and validation of an Electrical Power System from scratch of a 1/3U cubesat (a small satellite). The main problems found were the size restrictions and the use of off-the-shelf components.\n\nThe prototype designed included the Battery Charge Regulator (BCR), different voltage regulators and a board for cutting the power of part of the board when the battery voltage was below a predefined threshold.\n\n![alt text](/images/projects/femtoxat/proto.png 'Block diagram of the prototype')\n\nAfter concluding my master thesis with the maximum grade, I continued with this project together with [Yago Sánchez](https://es.linkedin.com/in/yago-s%C3%A1nchez-calvo-4b1761aa/en) developing a final complete prototype ready to fit into our small satellite.",
     "technologies": [
       "hardware",
       "pcb design",
