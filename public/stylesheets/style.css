@@ -543,11 +543,9 @@ footer {
     z-index: -99;
 }
 
-#img-header img {
+#img-header div {
     background-attachment: fixed;
-    background-position: center;
     height: 400px;
-    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

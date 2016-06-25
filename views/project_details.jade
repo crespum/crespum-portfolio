@@ -6,7 +6,7 @@ block vars
 block content
   -var media_path = "/images/projects/";
   header#img-header
-      img(style='background-image: url(' + media_path + project.media.img_mini +');')
+      div(style='background-image: url(' + media_path + project.media.img_mini +');')
       .row#title
         .col-md-6.col-md-offset-3
           h1= title
@@ -57,7 +57,7 @@ block content
             if project.media.videos_list
               each val in project.media.videos_list
                 a(href='https://www.youtube.com/watch?v=' + val, target='_blank')
-                  .col-md-4.col-xs-6.gallery-card(style='background-image: url(http://img.youtube.com/vi/' + val +'/0.jpg);')    
+                  .col-md-4.col-xs-6.gallery-card(style='background-image: url(https://img.youtube.com/vi/' + val +'/0.jpg);')    
                     p.video
                       span.fa.fa-play.fa-4x
           .articles
