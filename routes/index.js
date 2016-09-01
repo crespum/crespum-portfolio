@@ -9,14 +9,14 @@ var socials_db = JSON.parse(fs.readFileSync('public/databases/socials.json', 'ut
 //var db = new loki('projects'); 
 
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Xabier Crespo', projects: projects_db, socials: socials_db });
+    res.render('index', { title: 'Crespum', projects: projects_db, socials: socials_db });
 });
 
 router.param('project', function (req, res, next, project) {
-  if(projects_db.hasOwnProperty(project))
-  	req.project = projects_db[project];
-  else return next(new Error('I have not collaborated on this project yet. If you think it may fit me, feel free to contact me.'));
-  return next();
+    if(projects_db.hasOwnProperty(project))
+        req.project = projects_db[project];
+    else return next(new Error('I have not collaborated on this project yet. If you think it may fit me, feel free to contact me.'));
+    return next();
 });
 
 router.get('/projects/:project', function(req, res, next) {
