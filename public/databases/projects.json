@@ -39,8 +39,8 @@
     }
   },
   "maintoolstrap": {
-    "title": "Maintool Strap",
-    "brief": "Freelance embedded software engineer",
+    "title": "Maintool Classi",
+    "brief": "Embedded engineer consultant",
     "url": "http://maintool.me",
     "media": {
       "img_mini": "maintoolstrap/maintool.jpg",
@@ -51,13 +51,24 @@
         "maintoolstrap/features.jpg"
       ],
       "videos_list": [
-        "gNAvGyvfD80"
+        "gNAvGyvfD80",
+        "x_fsvKoDcrs"
       ],
       "articles_list": [
         {
           "editor": "El Mundo",
           "title": "Disfrutar de un 'smartwatch' sin sacrificar el reloj clásico",
           "url": "http://www.elmundo.es/economia/2015/09/30/560c21aae2704e896b8b45a3.html"
+        },
+        {
+          "editor": "TechRadar",
+          "title": "Soon you'll be able to turn any watch into a fitness tracker",
+          "url": "http://www.techradar.com/news/wearables/soon-you-ll-be-able-to-turn-any-watch-into-a-fitness-tracker-1317018"
+        },
+        {
+          "editor": "El País",
+          "title": "Classi, la correa que convierte en ‘inteligente’ cualquier reloj",
+          "url": "http://tecnologia.elpais.com/tecnologia/2016/09/20/actualidad/1474366349_873464.html"
         }
       ]
     },
@@ -86,8 +97,8 @@
     }
   },
   "fdm": {
-    "title": "Festas do Monte",
-    "brief": "Android app for promoting local events",
+    "title": "Festas do Monte app",
+    "brief": "Project manager",
     "url": "https://play.google.com/store/apps/details?id=com.caracocha.fdm",
     "media": {
       "img_mini": "fdm/thumbnail.jpg",
@@ -107,6 +118,11 @@
           "editor": "InfoMiño",
           "title": "Un joven guardés crea una aplicación para teléfonos que muestra la agenda cultural de la zona",
           "url": "http://www.infominho.com/index.php/id/51/objeto/26706/claves/UN-JOVEN-GUARD%C3%89S-CREA-UNA-APLICACI%C3%93N-PARA-TEL%C3%89FONOS-M%C3%93VILES-QUE-MUESTRA-LA-AGENDA-CULTURAL-DE-LA-ZONA"
+        },
+        {
+          "editor": "InfoMiño",
+          "title": "As Festas do Monte 2016 no teu dispositivo Android",
+          "url": "http://www.infominho.com/index.php/id/103/objeto/30542/claves/As-Festas-do-Monte-2016-no-teu-dispositivo-Android"          
         }
       ]
     },
@@ -127,7 +143,7 @@
   },
   "femtoxat": {
     "title": "FemtoXat EPS",
-    "brief": "Development of an Electrical Power Subsystem",
+    "brief": "Electrical engineer",
     "url": "http://crespum.github.io/FemtoXat-slides/#/",
     "media": {
       "img_mini": "femtoxat/femtoxat.jpg",
@@ -260,7 +276,7 @@
   },
   "3Dprinter": {
     "title": "3D printer",
-    "brief": "Building a RepRap Prusa i3",
+    "brief": "Maker",
     "url": "http://reprap.org/wiki/Prusa_i3",
     "media": {
       "img_mini": "3Dprinter/printer_thumbnail.jpg",
@@ -290,38 +306,6 @@
       "start_date": "August 2014",
       "completition_date": "November 2014",
       "active": false
-    }
-  },
-  "satnet": {
-    "title": "SatNet",
-    "brief": "Software developer of a SW for operate small satellites",
-    "url": "https://github.com/satnet-project",
-    "media": {
-      "img_mini": "fdm/thumbnail.jpg",
-      "img_logo": "satnet/satnet_logo.png",
-      "img_header": "",
-      "img_list": [
-        "satnet/screenshot1.png",
-        "satnet/screenshot2.png"
-      ]
-    },
-    "tags": [
-      "",
-      ""
-    ],
-    "description": "The SATNet project will provide the first network for sharing ground stations in between the members of the community of CubeSat developers. My work consisted in the development of the communications protocol based on Twisted, an event-driven networking engine.",
-    "technologies": [
-      "Python",
-      "Javascript"
-    ],
-    "activity_period": {
-      "start_date": "August 2014",
-      "completition_date": "June 2015",
-      "active": false
-    },
-    "company": {
-      "name": "Universidade de Vigo",
-      "url": "http://uvigo.gal"
     }
   }
 }
