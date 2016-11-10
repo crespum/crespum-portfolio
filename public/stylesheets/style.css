@@ -286,7 +286,13 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    font-weight: 300;
+    font-size: 12px;
+
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 15px;
 }
 
 /*********** Social Icons ***********/
