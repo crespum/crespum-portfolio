@@ -8,6 +8,7 @@
       "img_logo": "kien/logo.png",
       "img_header": "",
       "img_list": [
+        "kien/img0.jpg",
         "kien/img1.jpg",
         "kien/img3.jpg",
         "kien/img6.jpg"
@@ -15,6 +16,13 @@
       "videos_list": [
         "OVyuMKrM6xg",
         "U0zH1ktzZXk"
+      ],
+      "articles_list": [
+        {
+          "editor": "Tech EU",
+          "title": "Dutch sound system maker Kien raises €850,000 ahead of its CES appearance",
+          "url": "http://tech.eu/brief/kien-e850000-ces/?utm_content=buffer1d07b&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+        }
       ]
     },
     "tags": [
@@ -43,10 +51,12 @@
     "brief": "Embedded engineer consultant",
     "url": "http://maintool.me",
     "media": {
-      "img_mini": "maintoolstrap/maintool.jpg",
+      "img_mini": "maintoolstrap/straps.jpg",
       "img_logo": "maintoolstrap/logo_maintool_dark.png",
       "img_header": "",
       "img_list": [
+        "maintoolstrap/assembly.jpg",
+        "maintoolstrap/maintool.jpg",
         "maintoolstrap/app.png",
         "maintoolstrap/features.jpg"
       ],
@@ -69,7 +79,17 @@
           "editor": "El País",
           "title": "Classi, la correa que convierte en ‘inteligente’ cualquier reloj",
           "url": "http://tecnologia.elpais.com/tecnologia/2016/09/20/actualidad/1474366349_873464.html"
-        }
+        },
+        {
+          "editor": "El Economista",
+          "title": "El mejor de los smartwatches es su reloj de toda la vida",
+          "url": "http://www.eleconomista.es/evasion/caprichos/noticias/7916774/10/16/El-mejor-de-los-smartwatch-su-reloj-de-toda-la-vida.html"
+        },
+        {
+          "editor": "GQ",
+          "title": "¿Sabías que puedes convertir aquel reloj clásico que heredaste en un smartwatch?",
+          "url": "http://www.revistagq.com/noticias/tecnologia/articulos/classi-pulsera-inteligente-reloj-tradicional-maintool/24779"
+        }        
       ]
     },
     "tags": [
