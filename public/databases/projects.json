@@ -1,7 +1,7 @@
 {
     "kien": {
     "title": "Kien",
-    "brief": "Software engineer consultant",
+    "brief": "Embedded engineer consultant",
     "url": "https://indiegogo.com/projects/kien-the-first-flexible-sound-system",
     "media": {
       "img_mini": "kien/kien_thumbnail.jpg",
@@ -29,13 +29,16 @@
       "",
       ""
     ],
-    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understanding is by visiting their [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI'm collaborating with them designing the speakers -mainly software but some hardware advices too- and the mobile app. I know what you're thinking, *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Unlike some competitors, Kien thinks that the user of these speakers should focus on the audio and not on configuring all the music services in the app. The result is that the users will be able to use their usual apps, such as Spotify, and just open Kien's app for some configurations and cool features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
+    "description": "This Dutch startup is working on a modular and flexible sound system. The best way to understand it is by visiting the [Indiegogo campaign](https://indiegogo.com/projects/kien-the-first-flexible-sound-system), thanks to which they've raised more than $115,000.\n\nI started working with them during the prototyping stage. We used a Raspberry Pi with a combination of bash scripts and a Python module to handle all the logic of the speakers. Using this demos, we have been able to raise more tan 800k€.\n\nWhen it comes to mass production, the Pi is usually not an option, so we started working on our own PCB with a microcontroller. I'm working on both writing the firmware and helping with the electronics design. I'm trying to introduce the team into some technics widely used in software development but not that common when writting embedded software such as unit testing and continous integration. The objective is to improve the quality of the code we deliver by making the team aware of the fact that *quality* is more important than *quantity* when reliability is a goal.\n\nI have also written the mobile app. I know what you're thinking: *\"Do we really need an app for playing some music in our speakers? Can't we just use Spotify?\"* Unlike some competitors, Kien thinks at the users of these speakers shouldn't wast their time configuring all the music services in the app. The result is that the users will be able to use their usual apps, such as Spotify, and just open Kien's app for some configurations and cool features that we're working on such as **User Tracking Audio** and **Dynamic Sweetspot**.\n\n![Kien features](/images/projects/kien/features.png 'Kien features').",
     "technologies": [
-      "Android",
-      "Linux",
+      "embedded",
+      "C",
+      "linux",
       "BLE",
-      "Python",
-      "Bash"
+      "audio",
+      "python",
+      "android",
+      "bash"
     ],
     "activity_period": {
       "start_date": "December 2015",
@@ -99,7 +102,6 @@
     "description": "The MainTool strap transforms any regular timepiece into a smart watch while keeping the elegance of traditional brands. To achieve this, the electronics and sensors are put inside a leather or a rubber strap and allow the user to track parameters such as steps, heart rate, skin temperature and many other health variables. Those measurements are sent to a mobile phone via Bluetooth Low Energy.\n\nMy job was to develop the embedded software of the strap, including:\n\n* Communications protocol between strap and mobile phone based on BLE standard services when possible and on custom ones if not.\n\n* Data acquisition for the *simple* sensors.\n\n* Algorithms for the *complex* sensors (heart rate and pedometer): I've adapted algorithms broadly used for a low power consumption and low and noisy signal levels.  \n\nOne cool *mini-project* I worked on, was an automatic test bench for the prototypes using common robotics materials such as Arduinos, servomotors and even 3D printed parts!\n\nLike any other startup, I've also worked on different topics such as the [landing page](http://maintool.me), the [blog](http://blog.maintool.me) and server maintenance. During my last period in the company I was coordinating the software team.",
     "technologies": [
       "embedded",
-      "firmware",
       "IoT",
       "C",
       "C++",
@@ -136,8 +138,10 @@
     ],
     "description": "The SatNet project aims to provide the first network for sharing ground stations in between the members of the community of CubeSat developers. The project leader was a former Calpoly lecturer, [Ricardo Tubío](https://www.linkedin.com/in/rtubio/).\n\nMy work consisted in the development of the communications protocol as well as a few clients. The project has a strong Python component, as [the backend](https://satnet.aero.calpoly.edu) uses Django and he communications are based on Twisted, an event-driven networking engine for Python. I've also used some Javacript because [one of the clients](https://chrome.google.com/webstore/detail/satnet-leop-client/cloiengfacgdmggnhpnpfoofaphjjkcb) was built with Javascript as a Chrome app.",
     "technologies": [
-      "Python",
-      "Javascript"
+      "python",
+      "ground station",
+      "satellite",
+      "javascript"
     ],
     "activity_period": {
       "start_date": "August 2014",
@@ -185,8 +189,8 @@
     ],
     "description": "This project was born because I wanted to learn about Android development. Instead of working on some projects that would just live inside my computer I wanted to create something useful. Every year before this popular celebration begins I try to spend some time improving the app and implementing some of the features requested by the users. I find this a good way to learn the last news of the Android's framework.\n\nThe first version of this app [was created in 2013](https://play.google.com/store/apps/details?id=com.caracocha.fdm13) to promote *as Festas do Monte*, the most important event celebrated in my hometown, [A Guarda](https://en.wikipedia.org/wiki/A_Guarda). In 2014 I launched a new version that not only contains events during that celebration but all over the year. The events are inside a JSON file hosted in a server so I can update them without having to update the app.\n\nLike all of my personal projects, the source code is available on [GitHub](https://github.com/crespum/FDM) and everybody is welcome to contribute. Open source will make us evolve and learn faster!",
     "technologies": [
-      "Android",
-      "Java",
+      "android",
+      "java",
       "JSON"
     ],
     "activity_period": {
@@ -235,6 +239,7 @@
     ],
     "description": "This project was the result of my master thesis. It consisted in the design, verification and validation of an Electrical Power System from scratch of a 1/3U cubesat (a small satellite). The main problems found were the size restrictions and the use of off-the-shelf components.\n\nThe prototype designed included the Battery Charge Regulator (BCR), different voltage regulators and a board for cutting the power of part of the board when the battery voltage was below a predefined threshold.\n\n![alt text](/images/projects/femtoxat/proto.png 'Block diagram of the prototype')\n\nAfter concluding my master thesis with the maximum grade, I continued with this project together with [Yago Sánchez](https://es.linkedin.com/in/yago-s%C3%A1nchez-calvo-4b1761aa/en), developing a final complete prototype ready to fit into our small satellite.",
     "technologies": [
+      "satellite",
       "hardware",
       "pcb design",
       "low power",
@@ -315,7 +320,9 @@
     "description": "Humsat is an international educational initiative, supported by multiple international organizations such as [ESA](http://www.esa.int/ESA) and [UNOOSA](http://www.unoosa.org/oosa/index.html), for building a constellation of nano-satellites providing communication capabilities to areas without infrastructure. The first satellite demonstrator, Humsat-D, was developed in the University of Vigo, resulting in the second Galician satellite.\n\nThe spacecraft was successfully launched on November 2013 and I took part on this project as a GS operator from the MCC of the University of Vigo. This activities include Operation of the Satellite (routinely operations, experiments programming, telemetry download, etc) and the facilities maintenance (antennas calibration, rotor maintenance, etc).",
     "technologies": [
       "radiofrequency",
-      "radio amateur"
+      "radio amateur",
+      "ground station",
+      "satellite"
     ],
     "activity_period": {
       "start_date": "November 2013",
