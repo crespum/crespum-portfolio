@@ -454,7 +454,7 @@ footer p {
 }
 
 #intro .intro-text>.fa-border {
-    border-color:rgb(68, 68, 68);
+    border-color:rgba(68, 68, 68, 0);
 }
 
 @media(min-width:768px) {
@@ -653,16 +653,4 @@ footer p {
 .card span {
     padding: 25px 0;
     color: #E64A19;
-}
-
-@media(min-width:768px) {
-    .card:hover {
-        background: rgba(240, 240, 240, 0.9);
-        box-shadow: rgba(0, 0, 0, 0.258824) 1px 2px 5px 1px;
-        -webkit-transition: all 0.3s; /* Safari */
-        transition: all 0.3s;
-        -ms-transform: scale(1.05, 1.05); /* IE 9 */
-        -webkit-transform: scale(1.05, 1.05); /* Chrome, Safari, Opera */
-        transform: scale(1.05, 1.05);
-    }
 }
